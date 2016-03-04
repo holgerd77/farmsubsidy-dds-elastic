@@ -1,0 +1,74 @@
+{
+    "template" : "farmsubsidy-dds*",
+    "settings" : {
+        "number_of_shards" : 1
+    },
+    "mappings" : {
+      "payment" : {
+        "properties" : {
+          "amount_euro" : {
+            "type" : "double"
+          },
+          "amount_nc" : {
+            "type" : "double"
+          },
+          "country" : {
+            "type" : "string",
+            "analyzer" : "standard"
+          },
+          "name" : {
+            "type" : "string",
+            "analyzer" : "standard"
+          },
+          "nc_conv_date" : {
+            "type" : "date",
+            "format" : "strict_date_optional_time||epoch_millis"
+          },
+          "nc_conv_rate" : {
+            "type" : "double"
+          },
+          "nc_sign" : {
+            "type" : "string",
+            "analyzer" : "standard"
+          },
+          "nc_symbol" : {
+            "type" : "string",
+            "analyzer" : "standard"
+          },
+          "sub_payments_euro" : {
+            "properties" : {
+              "amount" : {
+                "type" : "double"
+              },
+              "name" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+              }
+            }
+          },
+          "sub_payments_nc" : {
+            "properties" : {
+              "amount" : {
+                "type" : "double"
+              },
+              "name" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+              }
+            }
+          },
+          "town" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "year" : {
+            "type" : "long"
+          },
+          "zip_code" : {
+            "type" : "string",
+            "analyzer" : "standard"
+          }
+        }
+      }
+    }
+}
