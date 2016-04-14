@@ -20,6 +20,10 @@
             "type" : "string",
             "analyzer" : "standard"
           },
+          "name_en" : {
+            "type" : "string",
+            "analyzer" : "standard"
+          },
           "nc_conv_date" : {
             "type" : "date",
             "format" : "strict_date_optional_time||epoch_millis"
