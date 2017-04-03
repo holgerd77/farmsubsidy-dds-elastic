@@ -5,7 +5,7 @@ if [ "$#" -ne 1 ]; then
   exit 1
 fi
 
-curl -XPUT 'localhost:9200/farmsubsidy-dds/payment/_bulk?pretty' --data-binary "@$1"
+curl -XPUT 'localhost:9200/openfarmsubsidies/payment/_bulk?pretty' --data-binary "@$1"
 printf "\n"
 sleep 1
 curl 'localhost:9200/_cat/indices?v'

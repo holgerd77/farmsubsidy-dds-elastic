@@ -1,7 +1,7 @@
-# farmsubsidy-dds-elastic
+# openfarmsubsidies-elastic
 
-Elasticsearch index for ``farmsubsidy-dds``.
+Elasticsearch index for ``openfarmsubsidies``.
 
 Documentation for this and associated repositories can be found at:
 
-* http://farmsubsidy-dds.readthedocs.org
+* http://openfarmsubsidies.readthedocs.org

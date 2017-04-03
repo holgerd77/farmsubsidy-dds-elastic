@@ -1,5 +1,5 @@
 {
-    "template" : "farmsubsidy-dds*",
+    "template" : "openfarmsubsidies*",
     "settings" : {
         "number_of_shards" : 1
     },
