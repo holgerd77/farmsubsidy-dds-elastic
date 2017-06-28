@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 if [ "$#" -ne 1 ]; then
   echo "Usage: ./add_to_index.sh FILENAME(JSON Lines formatted/Elastic indexing format)" >&2
   exit 1
